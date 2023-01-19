@@ -1,0 +1,66 @@
+<html>
+<script>
+function changestatus()
+{
+var status = document.getElementById("mariatlstatus");
+if(status.value=="UM")
+{
+document.getElementById("Wname")style.visibility="hidden";
+}
+else
+{
+document.getElementById("Wname")style.visibility="visible";
+}
+}
+</script>
+<form>
+<table cellpaddin="8" cellspacing="8" align="center" width="40%" bgcolor="powderblue">
+<tr>
+<td class="txt" colspan=2>
+<center><font size=6><b>customer form</b></center>
+<td>
+</tr>
+
+<tr>
+<td class="txt"><b>FirstName</b></td>
+<td><input type="text" name="firstname" style="padding:10px 10px"></td>
+<td>
+</tr>
+<tr>
+<td class="txt"><b>LastName</b></td>
+<td><input type="text" name="lastname" style="padding:10px 10px"></td>
+<td>
+</tr>
+<tr>
+<td class="txt"><b>Mariatlstatus</b></td>
+<td>
+<select id="Mariatlstatus" onchange="changestatus"() style="padding:10px 10px"></td>
+<option value="S">select</option>
+<option value="M">Married</option>
+<option value="UN">unmarried </option>
+</td>
+</td>
+<tr>
+<tr>
+<td class="txt"><b>WifeNAME</b></td>
+<td><input type="text" name="wifetname" style="padding:10px 10px"></td>
+</td>
+</tr>
+<td class="txt"><b>MobileNo</b></td>
+<input type="text" name="MobileNo" style="padding:10px 10px"></td> 
+</td>
+</tr>
+<td class="txt"><b>EmailID</b></td>
+<td><input type="text" name="emailid" style="padding:10px 10px"></td>
+</td>
+</tr>
+<td>
+<button><input type="button" value="Submit" style="padding:10px 10px"></button>
+</td>
+</tr>
+</table>
+</form>
+</html>
+
+
+
